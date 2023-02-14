@@ -9,24 +9,27 @@ def websitesi_ac(url="http://google.com.au/", return_format="json"):
         # print(response.url)  # request url
         # print(response.headers)  # http headers https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 
-        if return_format == "text":
-            return response.text
-        elif return_format == "json":
+        if return_format == "json":
             return response.json()
         else:
-            pass
+            return response.text
+
     else:
         return "sayfa yüklenemedi"
 
 
-def websitesi_ac_parametreli(url, parametre):
+def websitesi_ac_parametreli(url, parametre, return_format="json"):
     response = requests.get(url, params=parametre, allow_redirects=True)
     status_code = response.status_code
     if status_code == 200:
         print(status_code)  # http status code https://tr.wikipedia.org/wiki/HTTP_durum_kodlar%C4%B1
         print(response.url)  # request url
         print(response.headers)  # http headers https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
-        return response.text
+        if return_format == "json":
+            return response.json()
+        else:
+            return response.text
+
     else:
         return "sayfa yüklenemedi"
 
