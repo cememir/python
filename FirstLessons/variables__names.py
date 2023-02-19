@@ -7,6 +7,8 @@ a_D = "a_D"
 a____________________D = "a____________________D"
 _ad = "_ad"
 _ad_1 = "_ad_1"
+
+
 # üçağaçkılçığı = "üçağaçkılçığı" # non-ascii
 # print(üçağaçkılçığı)
 # 1AD = 1
@@ -18,8 +20,14 @@ _ad_1 = "_ad_1"
 # prnt() # NameError: name 'prnt' is not defined
 
 
-exit()
+# def = "Emir"
+# SyntaxError: # invalid syntax
+# Sözdizimi Hatası: geçersiz sözdizimi
 
+# while = "while" # ':' expected
+
+
+exit()
 
 print("ad", ad)
 print("AD", AD)
