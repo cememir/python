@@ -27,8 +27,6 @@ _ad_1 = "_ad_1"
 # while = "while" # ':' expected
 
 
-exit()
-
 print("ad", ad)
 print("AD", AD)
 print("Ad", Ad)
