@@ -15,6 +15,7 @@ _ad_1 = "_ad_1"
 # print(print) # TypeError: 'str' object is not callable
 # "Cem Emir"("Cem Emir")
 
+# prnt() # NameError: name 'prnt' is not defined
 
 
 exit()
